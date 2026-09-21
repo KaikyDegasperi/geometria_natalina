@@ -1,0 +1,8 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "Desafio em jogo" },
+    { "file": "Desafios.dc.html", "x": 470, "y": 0, "w": 390, "h": 844, "title": "Seleção de desafios" },
+    { "file": "Professor.dc.html", "x": 960, "y": 0, "w": 1280, "h": 820, "title": "Painel do professor" }
+  ],
+  "launch": { "view": "canvas" }
+}

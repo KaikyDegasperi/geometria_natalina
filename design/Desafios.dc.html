@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+  <style>
+    :root {
+      --pine: #0f3d2e; --pine-2: #14533f;
+      --holly: #b5233a; --holly-2: #8f1c2e;
+      --gold: #d9a441; --gold-2: #b9832e;
+      --snow: #f7f5ee; --ink: #17241f; --muted: #5c6d63;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Nunito', system-ui, sans-serif; color: var(--ink); }
+    a { color: var(--gold-2); } a:hover { color: var(--holly); }
+    h1, h2, h3, .display { font-family: 'Fredoka', system-ui, sans-serif; }
+  </style>
+</helmet>
+
+<div style="width:390px; min-height:844px; background: var(--snow); position:relative;">
+
+  <!-- header banner -->
+  <div style="background: linear-gradient(180deg, #0f3d2e 0%, #14533f 100%); padding:22px 20px 26px 20px; border-radius:0 0 28px 28px; position:relative; overflow:hidden;">
+    <svg width="390" height="140" style="position:absolute; top:0; left:0; opacity:0.35; pointer-events:none;">
+      <circle cx="40" cy="20" r="2" fill="#fff"/><circle cx="120" cy="10" r="1.5" fill="#fff"/>
+      <circle cx="330" cy="30" r="2" fill="#fff"/><circle cx="360" cy="80" r="1.5" fill="#fff"/>
+      <circle cx="200" cy="15" r="1.5" fill="#fff"/>
+    </svg>
+    <div style="display:flex; align-items:center; justify-content:space-between; position:relative;">
+      <div style="display:flex; flex-direction:column; gap:2px;">
+        <span style="color:#c9d6cd; font-size:12px;">Bem-vindo(a) de volta,</span>
+        <span class="display" style="color:#fff; font-size:20px; font-weight:600;">Explorador(a)</span>
+      </div>
+      <div style="width:44px; height:44px; border-radius:999px; background:var(--gold); display:flex; align-items:center; justify-content:center; border:2px solid #fff;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f3d2e" stroke-width="2"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+      </div>
+    </div>
+    <div style="display:flex; gap:10px; margin-top:18px;">
+      <div style="flex:1; background:rgba(255,255,255,0.1); border-radius:14px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.27 5.8 21 7 14.14l-5-4.87 7.1-1.01z"/></svg>
+        <span style="color:#fff; font-weight:800; font-size:14px;">240 XP</span>
+      </div>
+      <div style="flex:1; background:rgba(255,255,255,0.1); border-radius:14px; padding:10px 12px; display:flex; align-items:center; gap:8px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+        <span style="color:#fff; font-weight:800; font-size:14px;">Nível 2</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- section title -->
+  <div style="padding:22px 20px 8px 20px;">
+    <span class="display" style="font-size:17px; font-weight:600; color:var(--ink);">Caderno de Desafios</span>
+  </div>
+
+  <!-- challenge list -->
+  <div style="display:flex; flex-direction:column; gap:12px; padding:6px 20px 24px 20px;">
+
+    <!-- 1. Presente - completed -->
+    <div style="display:flex; align-items:center; gap:14px; background:#fff; border-radius:16px; padding:14px; box-shadow:0 2px 8px rgba(15,61,46,0.08); border:1px solid #eee6d3;">
+      <div style="width:56px; height:56px; border-radius:14px; background:var(--holly); flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 0 var(--holly-2);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 12h18M12 8v13M7.5 8a2.5 2.5 0 010-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 010 5"/></svg>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:3px;">
+        <span style="font-weight:800; font-size:15px;">1. Presente</span>
+        <span style="font-size:12px; color:var(--muted);">Pares ordenados · segmentos</span>
+        <div style="display:flex; gap:2px; margin-top:2px;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.27 5.8 21 7 14.14l-5-4.87 7.1-1.01z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.27 5.8 21 7 14.14l-5-4.87 7.1-1.01z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.27 5.8 21 7 14.14l-5-4.87 7.1-1.01z"/></svg>
+        </div>
+      </div>
+      <div style="width:30px; height:30px; border-radius:999px; background:var(--pine); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+    </div>
+
+    <!-- 2. Arvore - active -->
+    <div style="display:flex; align-items:center; gap:14px; background:#fff; border-radius:16px; padding:14px; box-shadow:0 4px 14px rgba(181,35,58,0.14); border:2px solid var(--holly); position:relative;">
+      <div style="position:absolute; top:-9px; right:14px; background:var(--holly); color:#fff; font-size:10px; font-weight:800; padding:3px 9px; border-radius:999px; letter-spacing:0.03em;">EM ANDAMENTO</div>
+      <div style="width:56px; height:56px; border-radius:14px; background:var(--pine-2); flex-shrink:0; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 0 #0c2e23;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 5H9zM12 7l4 6H8zM12 13l5 7H7z"/></svg>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:5px;">
+        <span style="font-weight:800; font-size:15px;">2. Árvore de Natal</span>
+        <span style="font-size:12px; color:var(--muted);">Quatro quadrantes · triângulos</span>
+        <div style="width:100%; height:6px; border-radius:999px; background:#eee6d3; overflow:hidden; margin-top:2px;">
+          <div style="width:62%; height:100%; background:var(--holly); border-radius:999px;"></div>
+        </div>
+      </div>
+      <div style="width:30px; height:30px; border-radius:999px; background:var(--holly); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+    </div>
+
+    <!-- 3. Estrela - locked -->
+    <div style="display:flex; align-items:center; gap:14px; background:#f2ede0; border-radius:16px; padding:14px; opacity:0.75;">
+      <div style="width:56px; height:56px; border-radius:14px; background:#cfc7ae; flex-shrink:0; display:flex; align-items:center; justify-content:center;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8a8168" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="1"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:3px;">
+        <span style="font-weight:800; font-size:15px; color:#7c7560;">3. Estrela</span>
+        <span style="font-size:12px; color:#9a927b;">Simetria · polígonos</span>
+      </div>
+      <span style="font-size:11px; color:#8a8168; font-weight:700;">Bloqueado</span>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
